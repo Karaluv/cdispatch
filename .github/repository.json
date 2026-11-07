@@ -1,0 +1,13 @@
+{
+  "name": "cdispatch",
+  "description": "A configurable queue above Slurm: improve resource utilization with priorities, resource profiles, checkpoint-aware preemption and plugins.",
+  "topics": [
+    "slurm",
+    "hpc",
+    "scheduler",
+    "job-queue",
+    "checkpoint",
+    "resource-management",
+    "python"
+  ]
+}

@@ -1,0 +1,5 @@
+#!/bin/bash
+set -eu
+base=$(cd -- "$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")" && pwd)
+export PYTHONPATH="$base${PYTHONPATH:+:$PYTHONPATH}"
+exec python3 -m cdispatch.cli "$@"

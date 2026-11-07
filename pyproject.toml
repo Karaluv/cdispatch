@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cdispatch-slurm"
+version = "0.1.0"
+description = "A configurable queue above Slurm for resource pools, priority scheduling and checkpoint-aware workflows"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "cdispatch contributors", email = "egr.vrn@gmail.com"}]
+keywords = ["slurm", "hpc", "scheduler", "queue", "checkpoint", "resource-utilization"]
+classifiers = ["Development Status :: 3 - Alpha", "Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3"]
+dependencies = []
+
+[project.scripts]
+cdispatch = "cdispatch.cli:main"
+cdispatch-broker = "cdispatch.broker:main"
+cdispatch-shared-broker = "cdispatch.shared_launch_broker:main"
+
+[project.urls]
+Repository = "https://github.com/Karaluv/cdispatch"
+Issues = "https://github.com/Karaluv/cdispatch/issues"
+
+[tool.setuptools]
+packages = ["cdispatch"]
+
+[tool.setuptools.package-data]
+cdispatch = ["dashboard.html"]
