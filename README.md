@@ -1,5 +1,7 @@
 # cdispatch
 
+[![Tests](https://github.com/Karaluv/cdispatch/actions/workflows/tests.yml/badge.svg)](https://github.com/Karaluv/cdispatch/actions/workflows/tests.yml)
+
 **A configurable task queue above Slurm for keeping a resource pool busy.**
 
 You have several workloads competing for a limited pool of CPUs, GPUs, memory
