@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cdispatch-research-examples"
+version = "0.1.0"
+description = "Optional research plugins and reproducible site recipes for cdispatch"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+authors = [{name = "cdispatch contributors", email = "egr.vrn@gmail.com"}]
+dependencies = ["cdispatch-slurm>=0.1.0,<0.2"]
+
+[project.urls]
+Repository = "https://github.com/Karaluv/cdispatch"
+Issues = "https://github.com/Karaluv/cdispatch/issues"
+
+[tool.setuptools]
+packages = ["cdispatch_research", "cdispatch_example"]
+
+[tool.setuptools.package-data]
+cdispatch_research = ["mass-worker.sh"]

@@ -11,3 +11,9 @@
 
 The extraction has offline regression coverage. Live upgrade validation is a
 separate deployment step; see docs/migration.md.
+
+## Research plugins consolidated — 2026-11-13
+
+- Bundled the optional cdispatch_example and cdispatch_research packages, fixtures, documentation and tests under plugins/research.
+- Install with pip install ./plugins/research from this checkout; core installation and explicit plugin activation remain unchanged.
+- Added plugin CI without a second-repository checkout.

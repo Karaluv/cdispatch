@@ -1,0 +1,111 @@
+{
+  "poll_interval": 10,
+  "submit_interval": 10,
+  "account_interval": 300,
+  "max_pending": 3,
+  "interactive_reserve_jobs": 0,
+  "auto_preempt": true,
+  "auto_rebalance": true,
+  "plan_window": 12,
+  "plan_beam": 32,
+  "failure_burst_limit": 3,
+  "pool_limits": {
+    "jobs": 19,
+    "cpus": null,
+    "mem_mib": null,
+    "gpus": null,
+    "nodes": null
+  },
+  "shared_pool": {
+    "enabled": true,
+    "cpus": 4,
+    "mem_mib": 4096,
+    "reserve_cpus": 1,
+    "reserve_mem_mib": 512,
+    "max_cpus": 8,
+    "max_mem_mib": 16384,
+    "max_handlers": 16,
+    "auto_grow": true,
+    "grow_after_seconds": 60
+  },
+  "task_history": {
+    "enabled": false
+  },
+  "respect_slurm_reservations": true,
+  "respect_pending_feedback": true,
+  "backfill_margin_seconds": 120,
+  "cancel_retry_interval": 30,
+  "owner": "alice",
+  "python": "/usr/bin/python3",
+  "node_cost": {},
+  "excluded_nodes": [],
+  "users": {
+    "alice": {
+      "enabled": true,
+      "authorized": true,
+      "account": "lab",
+      "limits": {
+        "jobs": 11,
+        "cpus": null,
+        "mem_mib": null,
+        "gpus": null,
+        "nodes": null
+      },
+      "partitions": [
+        "cpu",
+        "old",
+        "gpu"
+      ],
+      "unix_groups": [
+        "lab"
+      ]
+    },
+    "bob": {
+      "enabled": true,
+      "authorized": true,
+      "account": "lab",
+      "limits": {
+        "jobs": 4,
+        "cpus": null,
+        "gpus": null,
+        "nodes": null,
+        "mem_mib": null
+      },
+      "partitions": [
+        "cpu",
+        "old",
+        "gpu"
+      ],
+      "unix_groups": [
+        "lab"
+      ]
+    },
+    "carol": {
+      "enabled": true,
+      "authorized": true,
+      "account": "lab",
+      "limits": {
+        "jobs": 4,
+        "cpus": null,
+        "gpus": null,
+        "nodes": null,
+        "mem_mib": null
+      },
+      "partitions": [
+        "cpu",
+        "old",
+        "gpu"
+      ],
+      "unix_groups": [
+        "lab"
+      ]
+    }
+  },
+  "service_partitions": [
+    "old"
+  ],
+  "interactive_partitions": [
+    "old"
+  ],
+  "service_preferred_nodes": []
+}

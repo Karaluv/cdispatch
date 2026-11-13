@@ -153,12 +153,13 @@ cdispatch/                  generic Python package and CLI
   slurm.py                  Slurm command backend
   plugins.py                explicit versioned extension hooks
 external site directory/    config, state, profiles; not inside the package
-cdispatch-examples/         separately installed plugins and recipe examples
+plugins/research/           optional installable plugins and recipe examples
 ```
 
-The companion [cdispatch-examples](https://github.com/Karaluv/cdispatch-examples) repository contains the extracted research
+The bundled [research plugins](plugins/research/README.md) subproject contains the extracted research
 adapter, a minimal plugin and an anonymized multi-account site recipe. Core
-operation does not require it. There is no automatic plugin discovery from task
+operation does not require it. Install it from the same checkout with
+`python -m pip install ./plugins/research`. There is no automatic plugin discovery from task
 files. See [plugins](docs/plugins.md), [profiles](docs/profiles.md),
 [architecture](docs/architecture.md) and [migration](docs/migration.md).
 

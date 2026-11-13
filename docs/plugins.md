@@ -35,6 +35,8 @@ hook failures write monitor-error.json while authoritative status survives.
 Expected-failure classification changes circuit accounting, not the task's FAILED
 state. The raw Slurm outcome remains available.
 
-Core tests run without the companion package. The separate `cdispatch-examples`
-repository contains a minimal plugin and the extracted `cdispatch_research`
-adapter, with its own tests and cluster-specific options.
+Core tests run without the optional plugin package. The bundled
+[plugins/research](../plugins/research/README.md) subproject contains a minimal
+plugin and the extracted `cdispatch_research` adapter, with its own tests and
+site-specific options. Install it from this checkout with
+`python -m pip install ./plugins/research`.

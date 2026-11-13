@@ -1,0 +1,7 @@
+{
+  "source_repository": "Karaluv/cdispatch-examples",
+  "source_commit": "02d33a6de49f6fba621c40a3813f53d8145d958e",
+  "import_date": "2026-11-13",
+  "destination": "plugins/research",
+  "changes": "Documentation URLs, installation paths and CI adapted to one repository; Python application and plugin code retained."
+}

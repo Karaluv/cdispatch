@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "id": "demo/analysis/cpu/cpu4-fee57e48",
+  "program": "demo",
+  "workload": "analysis",
+  "hardware": "cpu",
+  "status": "candidate",
+  "kind": "batch",
+  "context": {
+    "input_class": "synthetic demonstration",
+    "software": "replace with reviewed version",
+    "validation": "not yet measured"
+  },
+  "profile": {
+    "name": "cpu4",
+    "partition": "cpu",
+    "nodes": 1,
+    "ranks_per_node": 1,
+    "threads": 4,
+    "mem_mib": 4096,
+    "wall_minutes": 30,
+    "slowdown": 1,
+    "command": [
+      "/shared/apps/analysis",
+      "--threads",
+      "4"
+    ],
+    "gpus_per_node": 0
+  },
+  "software": {
+    "binary": null,
+    "version": null,
+    "sha256": null,
+    "environment": null
+  },
+  "gpu": {
+    "gres_type": null,
+    "model": null,
+    "vram_mib_per_gpu": null,
+    "runtime_verified": false,
+    "cuda": null
+  },
+  "resources": {
+    "requested_ram_mib_per_node": 4096,
+    "peak_ram_mib": null,
+    "peak_ram_scope": "unknown",
+    "scratch_mib": null
+  },
+  "performance": {
+    "expected_seconds": null,
+    "basis": "unmeasured",
+    "comparison_key": null,
+    "timing_scope": null,
+    "samples": 0
+  },
+  "adaptation": {
+    "mode": "enumerated-only",
+    "compatible_profile_ids": [],
+    "checkpoint_restart_verified": false,
+    "notes": "No inferred CPU/GPU substitution, rank changes or memory reduction."
+  },
+  "sources": [
+    {
+      "path": "examples/tasks/cpu.json",
+      "sha256": "fee57e4845cb91848734e1cba73e07789eee4f761126021361af31072665745b"
+    }
+  ],
+  "observations": [],
+  "notes": [
+    "Imported configuration, not proof of a successful application run. Commands and paths are provenance; bind a new isolated run."
+  ]
+}

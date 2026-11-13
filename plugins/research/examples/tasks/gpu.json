@@ -1,0 +1,26 @@
+{
+  "name": "demo-analysis",
+  "workdir": "/shared/runs/demo-001",
+  "priority": 100,
+  "profiles": [
+    {
+      "name": "gpu1",
+      "partition": "gpu",
+      "nodes": 1,
+      "ranks_per_node": 1,
+      "threads": 4,
+      "mem_mib": 4096,
+      "wall_minutes": 30,
+      "slowdown": 1,
+      "command": [
+        "/shared/apps/analysis-gpu"
+      ],
+      "gpu_type": "example_gpu",
+      "gpus_per_node": 1
+    }
+  ],
+  "validate_command": [
+    "/shared/apps/check-result",
+    "result.json"
+  ]
+}

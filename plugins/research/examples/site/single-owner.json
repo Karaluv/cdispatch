@@ -1,0 +1,67 @@
+{
+  "owner": "alice",
+  "python": "/shared/site/venv/bin/python",
+  "users": {
+    "alice": {
+      "enabled": true,
+      "authorized": true,
+      "account": "lab",
+      "partitions": [
+        "cpu"
+      ],
+      "limits": {
+        "jobs": 5,
+        "cpus": null,
+        "mem_mib": null,
+        "gpus": null,
+        "nodes": null
+      }
+    }
+  },
+  "pool_limits": {
+    "jobs": 5,
+    "cpus": null,
+    "mem_mib": null,
+    "gpus": null,
+    "nodes": null
+  },
+  "node_cost": {},
+  "excluded_nodes": [],
+  "poll_interval": 10,
+  "submit_interval": 10,
+  "account_interval": 300,
+  "max_pending": 3,
+  "interactive_reserve_jobs": 0,
+  "auto_preempt": false,
+  "auto_rebalance": false,
+  "plan_window": 12,
+  "plan_beam": 32,
+  "failure_burst_limit": 3,
+  "respect_slurm_reservations": true,
+  "respect_pending_feedback": true,
+  "backfill_margin_seconds": 120,
+  "cancel_retry_interval": 30,
+  "service_partitions": [
+    "cpu"
+  ],
+  "service_preferred_nodes": [],
+  "interactive_partitions": [
+    "cpu"
+  ],
+  "service_wall_minutes": 1440,
+  "shared_pool": {
+    "enabled": true,
+    "cpus": 4,
+    "mem_mib": 4096,
+    "reserve_cpus": 1,
+    "reserve_mem_mib": 512,
+    "max_cpus": 8,
+    "max_mem_mib": 16384,
+    "max_handlers": 16,
+    "auto_grow": false
+  },
+  "task_history": {
+    "enabled": true
+  },
+  "plugins": []
+}

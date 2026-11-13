@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "id": "demo/analysis/gpu/gpu1-a4f23ff0",
+  "program": "demo",
+  "workload": "analysis",
+  "hardware": "gpu",
+  "status": "candidate",
+  "kind": "batch",
+  "context": {
+    "input_class": "synthetic demonstration",
+    "software": "replace with reviewed version",
+    "validation": "not yet measured"
+  },
+  "profile": {
+    "name": "gpu1",
+    "partition": "gpu",
+    "nodes": 1,
+    "ranks_per_node": 1,
+    "threads": 4,
+    "mem_mib": 4096,
+    "wall_minutes": 30,
+    "slowdown": 1,
+    "command": [
+      "/shared/apps/analysis-gpu"
+    ],
+    "gpu_type": "example_gpu",
+    "gpus_per_node": 1
+  },
+  "software": {
+    "binary": null,
+    "version": null,
+    "sha256": null,
+    "environment": null
+  },
+  "gpu": {
+    "gres_type": "example_gpu",
+    "model": null,
+    "vram_mib_per_gpu": null,
+    "runtime_verified": false,
+    "cuda": null
+  },
+  "resources": {
+    "requested_ram_mib_per_node": 4096,
+    "peak_ram_mib": null,
+    "peak_ram_scope": "unknown",
+    "scratch_mib": null
+  },
+  "performance": {
+    "expected_seconds": null,
+    "basis": "unmeasured",
+    "comparison_key": null,
+    "timing_scope": null,
+    "samples": 0
+  },
+  "adaptation": {
+    "mode": "enumerated-only",
+    "compatible_profile_ids": [],
+    "checkpoint_restart_verified": false,
+    "notes": "No inferred CPU/GPU substitution, rank changes or memory reduction."
+  },
+  "sources": [
+    {
+      "path": "examples/tasks/gpu.json",
+      "sha256": "a4f23ff043039a9e99312e773ffdcef7ef5f4ddf84da1523fcc76c61552f96e6"
+    }
+  ],
+  "observations": [],
+  "notes": [
+    "Imported configuration, not proof of a successful application run. Commands and paths are provenance; bind a new isolated run."
+  ]
+}
